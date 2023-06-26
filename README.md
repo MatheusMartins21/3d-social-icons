@@ -2,6 +2,9 @@
 
 This project was created for learning purposes in 3D objects with React.
 
+Commands:
+Use `yarn` to install dependencies and `yarn dev` to start project.
+
 For this project, i used the following libraries 3D:
   - [Three.js](https://yarnpkg.com/package/three)
   - [@react-three/fiber](https://yarnpkg.com/package/@react-three/fiber)
@@ -13,6 +16,6 @@ And for the 3D models, the .OBJ formats were rendered to .GLTF using Blender and
   - [gltfjsx](https://github.com/pmndrs/gltfjsx)
     - Using the command: `npx gltfjsx <newfile.gltf> -t`. To create a React file using the resources of the react-three library. Note: -t will create a .tsx file with typings.
 
-Some examples of icons in Blender::
+Some examples of icons in Blender:
 
 ![Blender Resources](./public/blender.png)
