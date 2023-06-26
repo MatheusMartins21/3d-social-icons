@@ -1,5 +1,5 @@
-import Social from "./components/Social/Social"
-import Title from "./components/Title/Title"
+import Social from "./components/Social/Social";
+import Title from "./components/Title/Title";
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <Title />
       <Social />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

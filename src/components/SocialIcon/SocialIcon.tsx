@@ -9,21 +9,21 @@ import Whatsapp from "../Whatsapp";
 import Twitter from "../Twitter";
 
 interface ISocialIcon {
-  iconName: 'facebook' | 'whatsapp' | 'twitter';
+  iconName: "facebook" | "whatsapp" | "twitter";
   link: string;
 }
 
 const SocialIcon = ({ iconName, link }: ISocialIcon) => {
   const getIconComponent = () => {
     switch (iconName) {
-      case 'facebook':
-          return <Facebook />;
+      case "facebook":
+        return <Facebook />;
 
-      case 'whatsapp':
-          return <Whatsapp />;
+      case "whatsapp":
+        return <Whatsapp />;
 
-      case 'twitter':
-          return <Twitter />;
+      case "twitter":
+        return <Twitter />;
 
       default:
         return null;
@@ -31,8 +31,7 @@ const SocialIcon = ({ iconName, link }: ISocialIcon) => {
   };
 
   const handleOpenLink = () => {
-    console.log("AQUI!")
-    window.open(link, "_blank")
+    window.open(link, "_blank");
   };
 
   return (
@@ -41,13 +40,11 @@ const SocialIcon = ({ iconName, link }: ISocialIcon) => {
         <ambientLight intensity={0.5} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
         <Suspense fallback={null}>
-          <mesh onClick={() => handleOpenLink()}>
-            {getIconComponent()}
-          </mesh>
+          <mesh onClick={() => handleOpenLink()}>{getIconComponent()}</mesh>
         </Suspense>
       </Canvas>
     </>
-  )
-}
+  );
+};
 
 export default SocialIcon;
